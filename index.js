@@ -54,8 +54,14 @@ inquirer
 
     {
       type: "input",
-      name: "Questions",
-      message: "What are your questions?",
+      name: "github",
+      message: "What your github username?",
+    },
+
+    {
+      type: "input",
+      name: "email",
+      message: "What your email address?",
     },
   ])
 
@@ -69,7 +75,6 @@ inquirer
       license,
       contribution,
       tests,
-      questions,
     } = data;
   });
 
