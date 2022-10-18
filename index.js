@@ -5,78 +5,63 @@ const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-const questions = [];
-inquirer
-  .prompt([
-    {
-      // Adding title
-      type: "input",
-      name: "title",
-      message: "What is your project title?",
-    },
+const questions = [
+  {
+    // Adding title
+    type: "input",
+    name: "title",
+    message: "What is your project title?",
+  },
 
-    {
-      type: "input",
-      name: "description",
-      message: "How do you describe your project functionalities?",
-    },
+  {
+    type: "input",
+    name: "description",
+    message: "How do you describe your project functionalities?",
+  },
 
-    {
-      type: "input",
-      name: "installation",
-      message: "What are the installation instruction for your project?",
-    },
+  {
+    type: "input",
+    name: "installation",
+    message: "What are the installation instruction for your project?",
+  },
 
-    {
-      type: "input",
-      name: "usage",
-      message: "What is the usage information for your project?",
-    },
+  {
+    type: "input",
+    name: "usage",
+    message: "What is the usage information for your project?",
+  },
 
-    {
-      type: "list",
-      name: "license",
-      message: "What is the license of your project?",
-      choices: ["MIT", "ISC", "unlicense"],
-    },
+  {
+    type: "list",
+    name: "license",
+    message: "What is the license of your project?",
+    choices: ["MIT", "ISC", "unlicense"],
+  },
 
-    {
-      type: "input",
-      name: "contribution",
-      message: "What is your contribution?",
-    },
+  {
+    type: "input",
+    name: "contribution",
+    message: "What is your contribution?",
+  },
 
-    {
-      type: "input",
-      name: "test",
-      message: "What are the test instruction for your project?",
-    },
+  {
+    type: "input",
+    name: "test",
+    message: "What are the test instruction for your project?",
+  },
 
-    {
-      type: "input",
-      name: "github",
-      message: "What your github username?",
-    },
+  {
+    type: "input",
+    name: "github",
+    message: "What your github username?",
+  },
 
-    {
-      type: "input",
-      name: "email",
-      message: "What your email address?",
-    },
-  ])
-
-  .then((data) => {
-    console.log(data);
-    const {
-      title,
-      description,
-      installation,
-      usage,
-      license,
-      contribution,
-      tests,
-    } = data;
-  });
+  {
+    type: "input",
+    name: "email",
+    message: "What your email address?",
+  },
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -86,7 +71,9 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
+    console.log(answers);
     writeToFile("README.md", generateMarkdown({ ...answers }));
+    console.log("readme generated");
   });
 }
 
