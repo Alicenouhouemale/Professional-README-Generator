@@ -16,19 +16,19 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "How do you describe your project functionalities?",
+    message: "What is your project description?",
   },
 
   {
     type: "input",
     name: "installation",
-    message: "What are the installation instruction for your project?",
+    message: "What is your project installation?",
   },
 
   {
     type: "input",
     name: "usage",
-    message: "What is the usage information for your project?",
+    message: "What is your project usage?",
   },
 
   {
