@@ -1,4 +1,4 @@
-# na
+# alicenouhouemale@gmail.com
 
   ## Description
 
@@ -7,25 +7,25 @@
   ## Section
 
   ## Installation
-  na
+  npm init, npm install inquirer
 
   ## Usage
-  na
+  Run node index.js
 
   ## License
   unlicense
 
   ## Contribution
-  na
+  none
 
   ## Tests
-  na
+  None
 
   ## Github
-  na
+  Alicenouhouemale
 
   ## Email
-  na
+  alicenouhouemale@gmail.com
 
 
 
