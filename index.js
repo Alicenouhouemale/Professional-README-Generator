@@ -12,56 +12,50 @@ inquirer
       // Adding title
       type: "input",
       name: "title",
-      message: "what is your project title?",
+      message: "What is your project title?",
     },
 
     {
       type: "input",
       name: "description",
-      message: "how do you describe your project functionalities?",
-    },
-    {
-      // Adding title
-      type: "input",
-      name: "table of contents",
-      message: "what are your table contents?",
+      message: "How do you describe your project functionalities?",
     },
 
     {
       type: "input",
       name: "installation",
-      message: "what is your installation?",
+      message: "What are the installation instruction for your project?",
     },
 
     {
       type: "input",
       name: "usage",
-      message: "what is your usage?",
+      message: "What is the usage information for your project?",
     },
 
     {
       type: "list",
       name: "license",
-      message: "what license would you like?",
+      message: "What is the license of your project?",
       choices: ["MIT", "ISC", "unlicense"],
     },
 
     {
       type: "input",
       name: "contribution",
-      message: "what is your contribution?",
+      message: "What is your contribution?",
     },
 
     {
       type: "input",
       name: "test",
-      message: "What command line would like to use to run the test?",
+      message: "What are the test instruction for your project?",
     },
 
     {
       type: "input",
       name: "Questions",
-      message: "what are your questions?",
+      message: "What are your questions?",
     },
   ])
 
