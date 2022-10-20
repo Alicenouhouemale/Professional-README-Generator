@@ -1,13 +1,11 @@
-# alicenouhouemale@gmail.com
+# Professional README.md
 
   ## Description
 
-  [license](url)
-
-  ## Section
+  A command line that creates application based on users
 
   ## Installation
-  npm init, npm install inquirer
+  npm
 
   ## Usage
   Run node index.js
@@ -16,7 +14,7 @@
   unlicense
 
   ## Contribution
-  none
+  None
 
   ## Tests
   None
